@@ -28,12 +28,26 @@ Every page follows the same shape:
 
 ```bash
 pnpm install
-pnpm run dev      # Vite dev server on http://localhost:5173
-pnpm run build    # Static build to ./dist
-pnpm run typecheck
+pnpm run dev          # Vite dev server on http://localhost:5173
+pnpm run build        # Static build to ./dist
+pnpm run typecheck    # tsc --noEmit
+pnpm run test         # vitest run, one shot
+pnpm run test:watch   # vitest in watch mode
 ```
 
 The site itself is a React 19 + Vite + TanStack Router app. The route tree is generated automatically from `src/routes/**` by the TanStack Router Vite plugin.
+
+## Tests
+
+Vitest with @testing-library/react (jsdom environment). 24 tests across 5 files. The suite covers the things most likely to break under refactor:
+
+- `src/topics.test.ts` — the curriculum registry. Asserts unique slugs, non-empty titles, correct prev/next neighbours at the boundaries, and that `groupedTopics()` collapses adjacent topics with the same group label without dropping any.
+- `src/components/Callout.test.tsx` — default vs explicit titles per kind, plus the kind-specific CSS modifier class.
+- `src/components/CodeBlock.test.tsx` — renders code body, falls back from filename to lang in the header, and clicks the copy button without throwing.
+- `src/components/Compare.test.tsx` — both columns render their title and body.
+- `src/components/Stub.test.tsx` — placeholder weaves the topic name into its message.
+
+Route pages are not unit-tested individually because they are static content. They are exercised by `tsc --noEmit` (which checks every file) and by manual review in the browser.
 
 ## How it's organised
 
