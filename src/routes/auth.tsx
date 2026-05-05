@@ -10,11 +10,11 @@ function Page() {
 	return (
 		<TopicLayout
 			slug="/auth"
-			group="bcrypt, JWT pinning, and iron-session cookies done right.:Backend"
-			title="Auth\"
-			tagline=" hashing, JWT, sessions"
+			group="Backend"
+			title="Auth: hashing, JWT, sessions"
+			tagline="bcrypt, JWT pinning, and iron-session cookies done right."
 		>
-			<Stub what="Auth\" />
+			<Stub what="Auth" />
 		</TopicLayout>
 	);
 }

@@ -10,9 +10,9 @@ function Page() {
 	return (
 		<TopicLayout
 			slug="/bff"
-			group=" why you might want one and where auth lives.:Backend"
+			group="Backend"
 			title="The BFF pattern"
-			tagline="Backend-for-frontend"
+			tagline="Backend-for-frontend: why you might want one and where auth lives."
 		>
 			<Stub what="The BFF pattern" />
 		</TopicLayout>
