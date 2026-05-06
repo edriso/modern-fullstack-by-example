@@ -188,6 +188,10 @@ pre code {
 	max-width: calc(var(--content-max) + 2 * var(--gap-4));
 	width: 100%;
 	margin: 0 auto;
+	/* Grid items default to min-width: auto, which lets long unbreakable
+	 * children (a <pre> line, a long URL) push the column past 1fr and force
+	 * the whole page to scroll sideways on phones. */
+	min-width: 0;
 }
 
 /* Mobile menu trigger, hidden on desktop */
@@ -486,6 +490,17 @@ pre code {
 
 .topic__pager .topic__pager--next {
 	text-align: right;
+}
+
+/* On phones the two pager cards side-by-side squeeze title text into 2-3
+ * lines. Stack them so each gets the full width. */
+@media (max-width: 540px) {
+	.topic__pager {
+		flex-direction: column;
+	}
+	.topic__pager .topic__pager--next {
+		text-align: left;
+	}
 }
 
 /* Tables. On phones, three-column tables of status codes / attacks etc. won't
