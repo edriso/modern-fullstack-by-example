@@ -4,6 +4,7 @@ import { tanstackRouter } from "@tanstack/router-plugin/vite";
 import { defineConfig } from "vite";
 
 export default defineConfig({
+  base: '/modern-fullstack-by-example/',
 	plugins: [
 		// File-based routing. The plugin watches src/routes/** and generates
 		// src/routeTree.gen.ts so the router knows every route at compile time.
