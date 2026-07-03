@@ -8,6 +8,8 @@ import { routeTree } from "./routeTree.gen";
 // TanStack Router Vite plugin from src/routes/**.
 const router = createRouter({
 	routeTree,
+	// Served from a GitHub Pages subpath, so the router mounts under the Vite base.
+	basepath: import.meta.env.BASE_URL.replace(/\/$/, ""),
 	defaultPreload: "intent",
 	scrollRestoration: true,
 });
