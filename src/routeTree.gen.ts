@@ -9,121 +9,31 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as VitestRouteImport } from './routes/vitest'
-import { Route as TypescriptRouteImport } from './routes/typescript'
-import { Route as TanstackStartRouteImport } from './routes/tanstack-start'
-import { Route as TanstackRouterRouteImport } from './routes/tanstack-router'
-import { Route as StylexRouteImport } from './routes/stylex'
-import { Route as SchemaRouteImport } from './routes/schema'
-import { Route as ReactRouteImport } from './routes/react'
-import { Route as ProtobufGrpcRouteImport } from './routes/protobuf-grpc'
-import { Route as PreCommitRouteImport } from './routes/pre-commit'
-import { Route as PlaywrightRouteImport } from './routes/playwright'
-import { Route as ObservabilityRouteImport } from './routes/observability'
-import { Route as NPlusOneRouteImport } from './routes/n-plus-one'
-import { Route as MonoreposRouteImport } from './routes/monorepos'
-import { Route as ErrorsRouteImport } from './routes/errors'
-import { Route as DrizzleRouteImport } from './routes/drizzle'
-import { Route as CiCdRouteImport } from './routes/ci-cd'
-import { Route as BiomeRouteImport } from './routes/biome'
-import { Route as BigPictureRouteImport } from './routes/big-picture'
-import { Route as BffRouteImport } from './routes/bff'
-import { Route as AuthRouteImport } from './routes/auth'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AuthRouteImport } from './routes/auth'
+import { Route as BffRouteImport } from './routes/bff'
+import { Route as BigPictureRouteImport } from './routes/big-picture'
+import { Route as BiomeRouteImport } from './routes/biome'
+import { Route as CiCdRouteImport } from './routes/ci-cd'
+import { Route as DrizzleRouteImport } from './routes/drizzle'
+import { Route as ErrorsRouteImport } from './routes/errors'
+import { Route as MonoreposRouteImport } from './routes/monorepos'
+import { Route as NPlusOneRouteImport } from './routes/n-plus-one'
+import { Route as ObservabilityRouteImport } from './routes/observability'
+import { Route as PlaywrightRouteImport } from './routes/playwright'
+import { Route as PreCommitRouteImport } from './routes/pre-commit'
+import { Route as ProtobufGrpcRouteImport } from './routes/protobuf-grpc'
+import { Route as ReactRouteImport } from './routes/react'
+import { Route as SchemaRouteImport } from './routes/schema'
+import { Route as StylexRouteImport } from './routes/stylex'
+import { Route as TanstackRouterRouteImport } from './routes/tanstack-router'
+import { Route as TanstackStartRouteImport } from './routes/tanstack-start'
+import { Route as TypescriptRouteImport } from './routes/typescript'
+import { Route as VitestRouteImport } from './routes/vitest'
 
-const VitestRoute = VitestRouteImport.update({
-  id: '/vitest',
-  path: '/vitest',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TypescriptRoute = TypescriptRouteImport.update({
-  id: '/typescript',
-  path: '/typescript',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TanstackStartRoute = TanstackStartRouteImport.update({
-  id: '/tanstack-start',
-  path: '/tanstack-start',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TanstackRouterRoute = TanstackRouterRouteImport.update({
-  id: '/tanstack-router',
-  path: '/tanstack-router',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StylexRoute = StylexRouteImport.update({
-  id: '/stylex',
-  path: '/stylex',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SchemaRoute = SchemaRouteImport.update({
-  id: '/schema',
-  path: '/schema',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ReactRoute = ReactRouteImport.update({
-  id: '/react',
-  path: '/react',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ProtobufGrpcRoute = ProtobufGrpcRouteImport.update({
-  id: '/protobuf-grpc',
-  path: '/protobuf-grpc',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PreCommitRoute = PreCommitRouteImport.update({
-  id: '/pre-commit',
-  path: '/pre-commit',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PlaywrightRoute = PlaywrightRouteImport.update({
-  id: '/playwright',
-  path: '/playwright',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ObservabilityRoute = ObservabilityRouteImport.update({
-  id: '/observability',
-  path: '/observability',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const NPlusOneRoute = NPlusOneRouteImport.update({
-  id: '/n-plus-one',
-  path: '/n-plus-one',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const MonoreposRoute = MonoreposRouteImport.update({
-  id: '/monorepos',
-  path: '/monorepos',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ErrorsRoute = ErrorsRouteImport.update({
-  id: '/errors',
-  path: '/errors',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DrizzleRoute = DrizzleRouteImport.update({
-  id: '/drizzle',
-  path: '/drizzle',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const CiCdRoute = CiCdRouteImport.update({
-  id: '/ci-cd',
-  path: '/ci-cd',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const BiomeRoute = BiomeRouteImport.update({
-  id: '/biome',
-  path: '/biome',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const BigPictureRoute = BigPictureRouteImport.update({
-  id: '/big-picture',
-  path: '/big-picture',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const BffRoute = BffRouteImport.update({
-  id: '/bff',
-  path: '/bff',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AuthRoute = AuthRouteImport.update({
@@ -131,9 +41,99 @@ const AuthRoute = AuthRouteImport.update({
   path: '/auth',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const BffRoute = BffRouteImport.update({
+  id: '/bff',
+  path: '/bff',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BigPictureRoute = BigPictureRouteImport.update({
+  id: '/big-picture',
+  path: '/big-picture',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BiomeRoute = BiomeRouteImport.update({
+  id: '/biome',
+  path: '/biome',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CiCdRoute = CiCdRouteImport.update({
+  id: '/ci-cd',
+  path: '/ci-cd',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DrizzleRoute = DrizzleRouteImport.update({
+  id: '/drizzle',
+  path: '/drizzle',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ErrorsRoute = ErrorsRouteImport.update({
+  id: '/errors',
+  path: '/errors',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MonoreposRoute = MonoreposRouteImport.update({
+  id: '/monorepos',
+  path: '/monorepos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NPlusOneRoute = NPlusOneRouteImport.update({
+  id: '/n-plus-one',
+  path: '/n-plus-one',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ObservabilityRoute = ObservabilityRouteImport.update({
+  id: '/observability',
+  path: '/observability',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlaywrightRoute = PlaywrightRouteImport.update({
+  id: '/playwright',
+  path: '/playwright',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PreCommitRoute = PreCommitRouteImport.update({
+  id: '/pre-commit',
+  path: '/pre-commit',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProtobufGrpcRoute = ProtobufGrpcRouteImport.update({
+  id: '/protobuf-grpc',
+  path: '/protobuf-grpc',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ReactRoute = ReactRouteImport.update({
+  id: '/react',
+  path: '/react',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SchemaRoute = SchemaRouteImport.update({
+  id: '/schema',
+  path: '/schema',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StylexRoute = StylexRouteImport.update({
+  id: '/stylex',
+  path: '/stylex',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TanstackRouterRoute = TanstackRouterRouteImport.update({
+  id: '/tanstack-router',
+  path: '/tanstack-router',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TanstackStartRoute = TanstackStartRouteImport.update({
+  id: '/tanstack-start',
+  path: '/tanstack-start',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TypescriptRoute = TypescriptRouteImport.update({
+  id: '/typescript',
+  path: '/typescript',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VitestRoute = VitestRouteImport.update({
+  id: '/vitest',
+  path: '/vitest',
   getParentRoute: () => rootRouteImport,
 } as any)
 
@@ -305,137 +305,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/vitest': {
-      id: '/vitest'
-      path: '/vitest'
-      fullPath: '/vitest'
-      preLoaderRoute: typeof VitestRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/typescript': {
-      id: '/typescript'
-      path: '/typescript'
-      fullPath: '/typescript'
-      preLoaderRoute: typeof TypescriptRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/tanstack-start': {
-      id: '/tanstack-start'
-      path: '/tanstack-start'
-      fullPath: '/tanstack-start'
-      preLoaderRoute: typeof TanstackStartRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/tanstack-router': {
-      id: '/tanstack-router'
-      path: '/tanstack-router'
-      fullPath: '/tanstack-router'
-      preLoaderRoute: typeof TanstackRouterRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/stylex': {
-      id: '/stylex'
-      path: '/stylex'
-      fullPath: '/stylex'
-      preLoaderRoute: typeof StylexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/schema': {
-      id: '/schema'
-      path: '/schema'
-      fullPath: '/schema'
-      preLoaderRoute: typeof SchemaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/react': {
-      id: '/react'
-      path: '/react'
-      fullPath: '/react'
-      preLoaderRoute: typeof ReactRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/protobuf-grpc': {
-      id: '/protobuf-grpc'
-      path: '/protobuf-grpc'
-      fullPath: '/protobuf-grpc'
-      preLoaderRoute: typeof ProtobufGrpcRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/pre-commit': {
-      id: '/pre-commit'
-      path: '/pre-commit'
-      fullPath: '/pre-commit'
-      preLoaderRoute: typeof PreCommitRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/playwright': {
-      id: '/playwright'
-      path: '/playwright'
-      fullPath: '/playwright'
-      preLoaderRoute: typeof PlaywrightRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/observability': {
-      id: '/observability'
-      path: '/observability'
-      fullPath: '/observability'
-      preLoaderRoute: typeof ObservabilityRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/n-plus-one': {
-      id: '/n-plus-one'
-      path: '/n-plus-one'
-      fullPath: '/n-plus-one'
-      preLoaderRoute: typeof NPlusOneRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/monorepos': {
-      id: '/monorepos'
-      path: '/monorepos'
-      fullPath: '/monorepos'
-      preLoaderRoute: typeof MonoreposRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/errors': {
-      id: '/errors'
-      path: '/errors'
-      fullPath: '/errors'
-      preLoaderRoute: typeof ErrorsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/drizzle': {
-      id: '/drizzle'
-      path: '/drizzle'
-      fullPath: '/drizzle'
-      preLoaderRoute: typeof DrizzleRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/ci-cd': {
-      id: '/ci-cd'
-      path: '/ci-cd'
-      fullPath: '/ci-cd'
-      preLoaderRoute: typeof CiCdRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/biome': {
-      id: '/biome'
-      path: '/biome'
-      fullPath: '/biome'
-      preLoaderRoute: typeof BiomeRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/big-picture': {
-      id: '/big-picture'
-      path: '/big-picture'
-      fullPath: '/big-picture'
-      preLoaderRoute: typeof BigPictureRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/bff': {
-      id: '/bff'
-      path: '/bff'
-      fullPath: '/bff'
-      preLoaderRoute: typeof BffRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/auth': {
@@ -445,11 +319,137 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/bff': {
+      id: '/bff'
+      path: '/bff'
+      fullPath: '/bff'
+      preLoaderRoute: typeof BffRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/big-picture': {
+      id: '/big-picture'
+      path: '/big-picture'
+      fullPath: '/big-picture'
+      preLoaderRoute: typeof BigPictureRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/biome': {
+      id: '/biome'
+      path: '/biome'
+      fullPath: '/biome'
+      preLoaderRoute: typeof BiomeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ci-cd': {
+      id: '/ci-cd'
+      path: '/ci-cd'
+      fullPath: '/ci-cd'
+      preLoaderRoute: typeof CiCdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/drizzle': {
+      id: '/drizzle'
+      path: '/drizzle'
+      fullPath: '/drizzle'
+      preLoaderRoute: typeof DrizzleRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/errors': {
+      id: '/errors'
+      path: '/errors'
+      fullPath: '/errors'
+      preLoaderRoute: typeof ErrorsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/monorepos': {
+      id: '/monorepos'
+      path: '/monorepos'
+      fullPath: '/monorepos'
+      preLoaderRoute: typeof MonoreposRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/n-plus-one': {
+      id: '/n-plus-one'
+      path: '/n-plus-one'
+      fullPath: '/n-plus-one'
+      preLoaderRoute: typeof NPlusOneRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/observability': {
+      id: '/observability'
+      path: '/observability'
+      fullPath: '/observability'
+      preLoaderRoute: typeof ObservabilityRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/playwright': {
+      id: '/playwright'
+      path: '/playwright'
+      fullPath: '/playwright'
+      preLoaderRoute: typeof PlaywrightRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pre-commit': {
+      id: '/pre-commit'
+      path: '/pre-commit'
+      fullPath: '/pre-commit'
+      preLoaderRoute: typeof PreCommitRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/protobuf-grpc': {
+      id: '/protobuf-grpc'
+      path: '/protobuf-grpc'
+      fullPath: '/protobuf-grpc'
+      preLoaderRoute: typeof ProtobufGrpcRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/react': {
+      id: '/react'
+      path: '/react'
+      fullPath: '/react'
+      preLoaderRoute: typeof ReactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/schema': {
+      id: '/schema'
+      path: '/schema'
+      fullPath: '/schema'
+      preLoaderRoute: typeof SchemaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/stylex': {
+      id: '/stylex'
+      path: '/stylex'
+      fullPath: '/stylex'
+      preLoaderRoute: typeof StylexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tanstack-router': {
+      id: '/tanstack-router'
+      path: '/tanstack-router'
+      fullPath: '/tanstack-router'
+      preLoaderRoute: typeof TanstackRouterRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tanstack-start': {
+      id: '/tanstack-start'
+      path: '/tanstack-start'
+      fullPath: '/tanstack-start'
+      preLoaderRoute: typeof TanstackStartRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/typescript': {
+      id: '/typescript'
+      path: '/typescript'
+      fullPath: '/typescript'
+      preLoaderRoute: typeof TypescriptRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vitest': {
+      id: '/vitest'
+      path: '/vitest'
+      fullPath: '/vitest'
+      preLoaderRoute: typeof VitestRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
